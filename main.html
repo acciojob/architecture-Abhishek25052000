@@ -4,12 +4,73 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		span{
+			font-weight:bold;
+		}
+		.imageContainer{
+			width:1100px;
+			height:780px;
+			background-color:gainsboro;
+			
+		}
+		table{
+			margin-left:30px;
+		}
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<div class="imageContainer">
+		<img style="margin-left:30px;" height="200px" width="580px" src="data:image/jpeg;base64,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">
+		<table border="1">
+			<tr>
+				<td style="width:200px; height:120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWSTx3RIBe7yvWkt8tgWw__R4b-lEuoTLtnHhxd0U0WAg3xFD-R0NHPyR&s=10" width="190px" height="175px"></td>
+				<td style="width:600px; height:120px; text-align: center;">Unit #5 -Floor Plans<br>
+				    A. Kitchen<br>
+				    B. Bathroom<br>
+				    C. Using "Slabs"<br>
+				    D. Georgian  <br>
+				    E. Sketching Assignment #5</td>
+				<td style="width:200px; height:120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3peAjrluKcRWEVqiEGWFZCAngtR7dxN-706AhFzWT6YIdJs3CjFUPQhw&s=10" width="190px" height="175px"></td>
+			</tr>
+			<tr>
+				<td style="width:200px; height:225px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3peAjrluKcRWEVqiEGWFZCAngtR7dxN-706AhFzWT6YIdJs3CjFUPQhw&s=10" width="190px" height="175px"><br>
+				         <span>HousePlans.com</span> The largest<br>
+				         source for quality affordable<br>
+				         ready-made house plans. A<br>
+				         great place to surf for space<br>
+				         planning ideas<br>
+				         <a>learn more</a></td>
+				<td style="width:600px; height:225px;text-align: center;"><span>Objective</span><br>
+				    Discuss factors that are important in the design of bedrooms. Plan the <br>
+				    size and location of closets for a typical residence. Plan a furniture<br>
+				    arrangement for a room. Implement important design considerations<br>
+				    for bathrooms. Plan a bathroom that follows solid design principles.<br>
+				    Plan the service area of a home by applying good design principles.<br>
+				    Desing a functional kitchen to meet a family's needs Select Kitchen<br>
+				    appliances that are appropriate for a design. Plan an efficient clothes<br>
+				    care center. Describe appropriate dimensions for garage space. Identify<br>
+				    the rooms and areas that compromise the living area Apply design<br>
+				    principles to planning a living room Integerate the furniture in a living<br>
+				    room plan Analyze a dining room using good design principles. Design<br>
+				    a functional entry and foyer. </td>
+				<td style="width:200px; height:225px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3peAjrluKcRWEVqiEGWFZCAngtR7dxN-706AhFzWT6YIdJs3CjFUPQhw&s=10" width="190px" height="175px"><br>
+					<span>Green Floor</span><br>
+					FreeGreen.com offers<br>
+					both sponsored and<br>
+					and non-sponsored floor<br>
+					plans. Their goal is to<br>
+					provide consumers with <br>
+					free solutions to their<br>
+					green architectural<br>
+					needs.<br>
+					<a>learn more</a>
+				</td>
+				
+			</tr>
+		</table>
+	</div>
 
 </body>
 
